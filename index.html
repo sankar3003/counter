@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: grey;
+
+        }
+    </style>
+</head>
+<body>
+
+<button id="inc" >+</button>
+<input type="text" id="value">
+<button  id="dec">-</button>
+    <script>
+
+onload()
+
+function onload(){
+    // df  
+   var inc = document.getElementById("inc")
+   var dec = document.getElementById("dec")
+  document.getElementById("value").value=0;
+ 
+inc.addEventListener('click',function() {
+
+    document.getElementById("value").value++
+})
+dec.addEventListener('click',function() {
+
+    document.getElementById("value").value--
+})
+}
+
+
+    </script>
+</body>
+</html>
